@@ -347,3 +347,264 @@ header{
   font-size: 10px;
   text-decoration: underline;
 }
+
+
+
+/*bot*/
+
+.ktg-slider{
+  margin: 0;
+  margin-top: 100px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("images/Bota_bg.jpg") center/cover no-repeat;
+  height: 350px;
+  max-height: 350px;
+}
+
+
+.btnHref{
+  color: white;
+  text-decoration: none;
+}
+
+.ktg_htext{
+  display: flex;
+  flex-direction: row;
+}
+
+.ktg_sliderH1{
+  margin-left: 45%;
+  color: white;
+  cursor: pointer;
+}
+
+.ktg_sliderBtn{
+  margin-top: 1%;
+  margin-left: 37%;
+  color: white;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: transparent;
+  height: 45px;
+  font-weight: bold;
+}
+
+.ktg_sliderBtn:hover{
+  background-color: rgba(0, 0, 0, 0.420);
+}
+
+
+.ktg_slider_container .container{
+  padding: 0 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+  margin-top: -4%;
+}
+
+.card_slider{
+  padding: 50px 0;
+}
+
+.swiper-slide{
+  flex: 0 0 auto;
+  width: 300px;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+.slider-image{
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.tSlider-text{
+  margin-top: -15px;
+  text-align: left;
+  padding: 3px;
+  background-color: #f5f5f504;
+  color: white;
+}
+
+.tSlider-text h2{
+  font-size: 20px;
+  height: 100%;
+}
+
+.tSlider-text h3{
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+
+/*politik */
+
+
+.politike-slider{
+  margin: 0;
+  margin-top: 200px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("images/Politike_bg.jpg") center/cover no-repeat;
+  height: 350px;
+  max-height: 350px;
+}
+
+
+.politike_htext{
+  display: flex;
+  flex-direction: row;
+}
+
+.politike_sliderH1{
+  margin-left: 43%;
+  color: white;
+  cursor: pointer;
+}
+
+
+.politike_sliderBtn{
+  margin-top: 1%;
+  margin-left: 35%;
+  color: white;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: transparent;
+  height: 45px;
+  font-weight: bold;
+}
+
+.politike_sliderBtn:hover{
+  background-color: rgba(0, 0, 0, 0.420);
+}
+
+
+/*sport*/
+
+
+.sport-slider{
+  margin: 0;
+  margin-top: 200px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("images/SportBg11.png") center/cover no-repeat;
+  height: 350px;
+  max-height: 350px;
+}
+
+
+.sport_htext{
+  display: flex;
+  flex-direction: row;
+}
+
+.sport_sliderH1{
+  margin-left: 45%;
+  color: white;
+  cursor: pointer;
+}
+
+
+.sport_sliderBtn{
+  margin-top: 1%;
+  margin-left: 35%;
+  color: white;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: transparent;
+  height: 45px;
+  font-weight: bold;
+}
+
+.sport_sliderBtn:hover{
+  background-color: rgba(0, 0, 0, 0.420);
+}
+
+
+
+
+/*showbiz*/
+
+
+.shB-slider{
+  margin: 0;
+  margin-top: 200px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("images/Showbiz_bg.jpg") center/cover no-repeat;
+  height: 350px;
+  max-height: 350px;
+}
+
+
+.shB_htext{
+  display: flex;
+  flex-direction: row;
+}
+
+.shB_sliderH1{
+  margin-left: 45%;
+  color: white;
+  cursor: pointer;
+}
+
+
+.shB_sliderBtn{
+  margin-top: 1%;
+  margin-left: 35%;
+  color: white;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: transparent;
+  height: 45px;
+  font-weight: bold;
+}
+
+.shB_sliderBtn:hover{
+  background-color: rgba(0, 0, 0, 0.420);
+}
+
+@media screen and (max-width: 480px){
+  .shB-slider,
+  .sport-slider,
+  .politike-slider,
+  .ktg-slider{
+    height: 480px;
+  }
+
+  .shB_sliderH1,
+  .sport_sliderH1,
+  .politike_sliderH1,
+  .ktg_sliderH1{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .shB_sliderBtn {
+    display: none;
+  }
+  .sport_sliderBtn {
+    display: none;
+  }
+  .politike_sliderBtn{
+    display: none;
+  }
+  .ktg_sliderBtn{
+    display: none;
+  }
+}

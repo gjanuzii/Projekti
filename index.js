@@ -1,8 +1,29 @@
-hamburger = document.querySelector(".hamburger");
-hamburger.onclick = function(){
-    navBar = document.querySelector(".nav-bar");
-    navBar.classList.toggle("active");
-}
+//headeri responsive
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  hamburger = document.querySelector(".hamburger");
+  let ballina = document.querySelector(".ballina");
+  let initialMarginTop = ballina.style.marginTop; 
+
+  if (ballina) {
+      hamburger.onclick = function(){
+          navBar = document.querySelector(".nav-bar");
+          navBar.classList.toggle("active");
+          
+          if (navBar.classList.contains("active")) {
+              ballina.style.marginTop = "350px"; 
+          } else {
+              ballina.style.marginTop = initialMarginTop; 
+              
+          }
+      }
+  } 
+});
+
+
+
+
 const slides = document.querySelectorAll(".slide");
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
@@ -50,7 +71,7 @@ prevBtn.style.display = "none";
 
 
 
-//top-lajmet slideri
+// slideri i lajmeve
 
 
 
