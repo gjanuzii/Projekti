@@ -102,3 +102,17 @@ body {
   opacity: 0.9;
 }
 
+@media only screen and (max-width:780px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .register-forma{
+    margin-left: 100px;
+  }
+  .login-forma{
+    margin-top: 250px;
+    margin-right: 80px;
+    margin-bottom: 250px;
+  }
+}
