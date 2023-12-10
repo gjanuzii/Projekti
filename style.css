@@ -1,312 +1,312 @@
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 header{
-    width: 100%;
-    height: 100%;
-    background:#dddddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  height: 100%;
+  background:#dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  z-index: 2;
 }
 
 .logo{
-    font-size: 28px;
-    font-weight: bold;
-    color: #50577A;
+  font-size: 28px;
+  font-weight: bold;
+  color: #50577A;
 }
 
 .hamburger{
-    display: none;
+  display: none;
 }
 
 .nav-bar ul{
-    display: flex;
+  display: flex;
 }
 
-.nav-bar ul li a{
-    display: block;
-    color: #50577A;
-    font-style: 20px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
+.hA{
+  display: block;
+  color: #50577A;
+  font-style: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
 }
 
-.nav-bar ul li a:hover{
-    text-decoration: underline;
-    margin-bottom: 7px;
+.hA:hover{
+  text-decoration: underline;
+  margin-bottom: 7px;
 }
 
 @media only screen and (max-width: 1320px) {
-    header{
-        padding: 0 50px;
-    }
+  header{
+      padding: 0 50px;
+  }
 }
 
 
 @media only screen and (max-width: 1100px) {
-    header{
-        padding: 0 30px;
-    }
+  header{
+      padding: 0 30px;
+  }
 }
 
 @media only screen and (max-width: 900px){
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
+  .hamburger{
+      display: block;
+      cursor: pointer;
+  }
 
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: #50577A;
-        margin: 6px 0;
-    }
+  .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background: #50577A;
+      margin: 6px 0;
+  }
 
-    .nav-bar{
-        height: 0;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color:#dddddd;
-        transition: 0.2s;
-        overflow: hidden;
-    }
-    .nav-bar.active{
-        margin-top: -50px;
-        height: 375px;
-    }
+  .nav-bar{
+      height: 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color:#dddddd;
+      transition: 0.2s;
+      overflow: hidden;
+  }
+  .nav-bar.active{
+      margin-top: -50px;
+      height: 375px;
+  }
 
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-    .nav-bar ul li a{
-        margin-bottom: 12px;
-    }
-    .nav-bar.active ul{
-        opacity: 1;
-    }
+  .nav-bar ul{
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+  }
+  .hA{
+      margin-bottom: 12px;
+  }
+  .nav-bar.active ul{
+      opacity: 1;
+  }
 
 }
 .ballina{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .slider{
-    margin-left: 10%;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.slider{
+  margin-left: 10%;
+}
+
+.slider-container {
+  border: 5px solid #50577A;
+  width: 60vw;
+  margin: 0 auto;
+  height: 10vh;
+  max-width: 40rem;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 6.3rem;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.h1S{
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  margin-top: 40%;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slide:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/lajmi1.png") center/cover no-repeat;
+}
+.slide:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/lajmi2.jpg") center/cover no-repeat;
+}
+.slide:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/lajmi3.jpg") center/cover no-repeat;
+}
+
+.slide:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/lajmi4.jpg") center/cover no-repeat;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+.prevBtn,
+.nextBtn {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+   /*ngjyra*/
+  transition: all 0.3s linear;
+}
+.prevBtn:hover,
+.nextBtn:hover {
+  color:#50577A;
+}
+
+
+@media screen and (min-width: 250px) {
   
   .slider-container {
-    border: 5px solid #50577A;
-    width: 60vw;
-    margin: 0 auto;
-    height: 10vh;
-    max-width: 40rem;
-    position: relative;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin-top: 6.3rem;
+    height: 620px;
+    width: 400px;
   }
-  .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    transition: all 0.25s ease-in-out;
-    text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .slider-container {
+    height: 600px;
+    width: 500px;
   }
-  .slide-img {
-    height: 100%;
-    object-fit: cover;
-  }
+}
+@media screen and (min-width: 768px) {
   
-  .person-img {
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+  .slider-container {
+    height: 500px;
+    width: 850px;
+    margin-left: 50px;
   }
+}
+@media screen and (min-width: 1200px) {
   
-  .h1S{
-    font-size: 48px;
-    color: white;
-    font-weight: bold;
-    margin-top: 40%;
-    text-transform: uppercase;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .slide:nth-child(1) {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("images/lajmi1.png") center/cover no-repeat;
-  }
-  .slide:nth-child(2) {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("images/lajmi2.jpg") center/cover no-repeat;
-  }
-  .slide:nth-child(3) {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("images/lajmi3.jpg") center/cover no-repeat;
-  }
-  
-  .slide:nth-child(4) {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("images/lajmi4.jpg") center/cover no-repeat;
-  }
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.75rem;
-  }
-  .prevBtn,
-  .nextBtn {
-    background: transparent;
-    border-color: transparent;
-    font-size: 1.75rem;
-    cursor: pointer;
-    margin: 0 0.25rem;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-     /*ngjyra*/
-    transition: all 0.3s linear;
-  }
-  .prevBtn:hover,
-  .nextBtn:hover {
-    color:#50577A;
-  }
-  
-
-  @media screen and (min-width: 250px) {
-    
-    .slider-container {
-      height: 620px;
-      width: 400px;
-    }
-  }
-  @media screen and (min-width: 576px) {
-    .slider-container {
-      height: 600px;
-      width: 500px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    
-    .slider-container {
-      height: 500px;
-      width: 850px;
-      margin-left: 50px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    
-    .slider-container {
-      height: 470px;
-      width: 650px;
-    }
-
+  .slider-container {
+    height: 470px;
+    width: 650px;
   }
 
-  @media screen and (max-width: 1200px){
-    .left{
-      display: none;
-    }
+}
+
+@media screen and (max-width: 1200px){
+  .left{
+    display: none;
   }
-  
-  
-  
-  
-  
-  
-  .leftH{
-    margin-top: 60px;
-    margin-bottom: -65px;
-    margin-left: 70px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #50577A;
-  }
-  
-  .main-left {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 70%;
-    height: 20%;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-  
-  
-  .mini-left {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.5px;
-    border: 1px solid gray ;
-    border-radius: 2px; 
-    cursor: pointer;
-    background-color: #50577a43; 
-  }
-  
-  .mini-left:hover{
-    background-color: #50577a23;
-  }
-  
-  
-  .mini-image {
-    width: 40%; 
-    height: auto; 
-    object-fit: cover; 
-    margin: 0; 
-  }
-  
-  
-  .mini-text {
-    width: 70%; 
-    padding: 0 10px; 
-  }
-  
-  
-  .mini-text h2 {
-    font-size: 24px; 
-    margin-bottom: 1px; 
-    margin-top: 4px;
-  }
-  
-  
-  .mini-text p {
-    font-size: 16px; 
-    line-height: 1.5; 
-    margin-bottom: 3px;
-    margin-top: -3px; 
-  }
-  
-  
-  .mini-text h3 {
-    font-size: 10px; 
-  }
-  
+}
+
+
+
+
+
+
+.leftH{
+  margin-top: 60px;
+  margin-bottom: -65px;
+  margin-left: 70px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #50577A;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 70%;
+  height: 20%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+
+.mini-left {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5px;
+  border: 1px solid gray ;
+  border-radius: 2px; 
+  cursor: pointer;
+  background-color: #50577a43; 
+}
+
+.mini-left:hover{
+  background-color: #50577a23;
+}
+
+
+.mini-image {
+  width: 40%; 
+  height: auto; 
+  object-fit: cover; 
+  margin: 0; 
+}
+
+
+.mini-text {
+  width: 70%; 
+  padding: 0 10px; 
+}
+
+
+.mini-text h2 {
+  font-size: 24px; 
+  margin-bottom: 1px; 
+  margin-top: 4px;
+}
+
+
+.mini-text p {
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin-bottom: 3px;
+  margin-top: -3px; 
+}
+
+
+.mini-text h3 {
+  font-size: 10px; 
+}
+
 
 
 
@@ -314,58 +314,58 @@ header{
 /*top lajmet slideri*/
 
 .bg-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 200px;
+margin: 0;
+padding: 20px;
+margin-top: 200px;
 }
 
 .sliderH1{
-  margin-left: 45%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+margin-left: 45%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
 }
 
 .slider_container .container{
-  padding: 0 15px;
-  max-width: 1230px;
-  margin: 0 auto;
-  margin-top: -5%;
+padding: 0 15px;
+max-width: 1230px;
+margin: 0 auto;
+margin-top: -5%;
 }
 
 .card_slider{
-  padding: 50px 0;
+padding: 50px 0;
 }
 
 .swiper-slide{
-  flex: 0 0 auto;
-  width: 300px;
-  cursor: pointer;
+flex: 0 0 auto;
+width: 300px;
+cursor: pointer;
 }
 
 .slider-image{
-  width: 100%;
-  height: auto;
-  border: 1px solid transparent;
-  border-radius: 15px;
+width: 100%;
+height: auto;
+border: 1px solid transparent;
+border-radius: 15px;
 }
 
 .tSlider-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .tSlider-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .tSlider-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -373,96 +373,96 @@ header{
 /*bot*/
 
 .ktg-slider{
-  margin: 0;
-  margin-top: 100px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("images/Bota_bg.jpg") center/cover no-repeat;
-  height: 350px;
-  max-height: 350px;
+margin: 0;
+margin-top: 100px;
+padding-top: 35px;
+padding-bottom: 30px;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+url("images/Bota_bg.jpg") center/cover no-repeat;
+height: 350px;
+max-height: 350px;
 }
 
 
 .btnHref{
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 .ktg_htext{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .ktg_sliderH1{
-  margin-left: 45%;
-  color: white;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+margin-left: 45%;
+color: white;
+cursor: pointer;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 30px;
 }
 
 .ktg_sliderBtn{
-  margin-top: 1%;
-  margin-left: 37%;
-  color: white;
-  cursor: pointer;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 3px;
-  background-color: transparent;
-  height: 45px;
-  font-weight: bold;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 1%;
+margin-left: 37%;
+color: white;
+cursor: pointer;
+border: 3px solid white;
+border-radius: 50px;
+padding: 3px;
+background-color: transparent;
+height: 45px;
+font-weight: bold;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .ktg_sliderBtn:hover{
-  background-color: rgba(0, 0, 0, 0.420);
+background-color: rgba(0, 0, 0, 0.420);
 }
 
 
 .ktg_slider_container .container{
-  padding: 0 15px;
-  max-width: 1230px;
-  margin: 0 auto;
-  margin-top: -4%;
+padding: 0 15px;
+max-width: 1230px;
+margin: 0 auto;
+margin-top: -4%;
 }
 
 .card_slider{
-  padding: 50px 0;
+padding: 50px 0;
 }
 
 .swiper-slide{
-  flex: 0 0 auto;
-  width: 300px;
-  cursor: pointer;
-  margin-top: 4%;
+flex: 0 0 auto;
+width: 300px;
+cursor: pointer;
+margin-top: 4%;
 }
 
 .slider-image{
-  width: 100%;
-  height: auto;
-  border: 2px solid white;
-  border-radius: 20px;
+width: 100%;
+height: auto;
+border: 2px solid white;
+border-radius: 20px;
 }
 
 .tSlider-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
-  color: white;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+color: white;
 }
 
 .tSlider-text h2{
-  font-size: 20px;
-  height: 100%;
+font-size: 20px;
+height: 100%;
 }
 
 .tSlider-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -470,48 +470,48 @@ header{
 
 
 .politike-slider{
-  margin: 0;
-  margin-top: 200px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("images/Politike_bg.jpg") center/cover no-repeat;
-  height: 350px;
-  max-height: 350px;
+margin: 0;
+margin-top: 200px;
+padding-top: 35px;
+padding-bottom: 30px;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+url("images/Politike_bg.jpg") center/cover no-repeat;
+height: 350px;
+max-height: 350px;
 }
 
 
 .politike_htext{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .politike_sliderH1{
-  margin-left: 43%;
-  color: white;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+margin-left: 43%;
+color: white;
+cursor: pointer;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 30px;
 }
 
 
 .politike_sliderBtn{
-  margin-top: 1%;
-  margin-left: 35%;
-  color: white;
-  cursor: pointer;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 3px;
-  background-color: transparent;
-  height: 45px;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 1%;
+margin-left: 35%;
+color: white;
+cursor: pointer;
+border: 3px solid white;
+border-radius: 50px;
+padding: 3px;
+background-color: transparent;
+height: 45px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .politike_sliderBtn:hover{
-  background-color: rgba(0, 0, 0, 0.420);
+background-color: rgba(0, 0, 0, 0.420);
 }
 
 
@@ -519,48 +519,48 @@ header{
 
 
 .sport-slider{
-  margin: 0;
-  margin-top: 200px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("images/SportBg11.png") center/cover no-repeat;
-  height: 350px;
-  max-height: 350px;
+margin: 0;
+margin-top: 200px;
+padding-top: 35px;
+padding-bottom: 30px;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+url("images/SportBg11.png") center/cover no-repeat;
+height: 350px;
+max-height: 350px;
 }
 
 
 .sport_htext{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .sport_sliderH1{
-  margin-left: 45%;
-  color: white;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+margin-left: 45%;
+color: white;
+cursor: pointer;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 30px;
 }
 
 
 .sport_sliderBtn{
-  margin-top: 1%;
-  margin-left: 35%;
-  color: white;
-  cursor: pointer;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 3px;
-  background-color: transparent;
-  height: 45px;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 1%;
+margin-left: 35%;
+color: white;
+cursor: pointer;
+border: 3px solid white;
+border-radius: 50px;
+padding: 3px;
+background-color: transparent;
+height: 45px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .sport_sliderBtn:hover{
-  background-color: rgba(0, 0, 0, 0.420);
+background-color: rgba(0, 0, 0, 0.420);
 }
 
 
@@ -570,79 +570,79 @@ header{
 
 
 .shB-slider{
-  margin: 0;
-  margin-top: 200px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("images/Showbiz_bg.jpg") center/cover no-repeat;
-  height: 350px;
-  max-height: 350px;
+margin: 0;
+margin-top: 200px;
+padding-top: 35px;
+padding-bottom: 30px;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+url("images/Showbiz_bg.jpg") center/cover no-repeat;
+height: 350px;
+max-height: 350px;
 }
 
 
 .shB_htext{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .shB_sliderH1{
-  margin-left: 45%;
-  color: white;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+margin-left: 45%;
+color: white;
+cursor: pointer;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 30px;
 }
 
 
 .shB_sliderBtn{
-  margin-top: 1%;
-  margin-left: 35%;
-  color: white;
-  cursor: pointer;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 3px;
-  background-color: transparent;
-  height: 45px;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 1%;
+margin-left: 35%;
+color: white;
+cursor: pointer;
+border: 3px solid white;
+border-radius: 50px;
+padding: 3px;
+background-color: transparent;
+height: 45px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .shB_sliderBtn:hover{
-  background-color: rgba(0, 0, 0, 0.420);
+background-color: rgba(0, 0, 0, 0.420);
 }
 
 @media screen and (max-width: 480px){
-  .shB-slider,
-  .sport-slider,
-  .politike-slider,
-  .ktg-slider{
-    height: 480px;
-  }
+.shB-slider,
+.sport-slider,
+.politike-slider,
+.ktg-slider{
+  height: 480px;
+}
 
-  .shB_sliderH1,
-  .sport_sliderH1,
-  .politike_sliderH1,
-  .ktg_sliderH1{
-    margin-left: 20%;
-  }
+.shB_sliderH1,
+.sport_sliderH1,
+.politike_sliderH1,
+.ktg_sliderH1{
+  margin-left: 20%;
+}
 }
 
 @media screen and (max-width: 1060px) {
-  .shB_sliderBtn {
-    display: none;
-  }
-  .sport_sliderBtn {
-    display: none;
-  }
-  .politike_sliderBtn{
-    display: none;
-  }
-  .ktg_sliderBtn{
-    display: none;
-  }
+.shB_sliderBtn {
+  display: none;
+}
+.sport_sliderBtn {
+  display: none;
+}
+.politike_sliderBtn{
+  display: none;
+}
+.ktg_sliderBtn{
+  display: none;
+}
 }
 
 
@@ -659,68 +659,68 @@ header{
 
 
 .B_main-section {
-  width: 100%;
-  height: 450px; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Bota_bg.jpg'); 
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 0 20px;
-  position: relative;
+width: 100%;
+height: 450px; 
+background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Bota_bg.jpg'); 
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+text-align: left;
+padding: 0 20px;
+position: relative;
 }
 
 .B_content{
-  margin-top: 80px;
-  height: 100px;
-  cursor: pointer;
+margin-top: 80px;
+height: 100px;
+cursor: pointer;
 }
 
 .B_h1:hover{
-  text-decoration: underline white;
+text-decoration: underline white;
 }
 
 .B_h1 {
-  font-size: 54px;
-  margin-bottom: 20px;
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
+font-size: 54px;
+margin-bottom: 20px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
 }
 
 .B_p {
-  font-size: 20px;
-  font-style: italic;
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+font-style: italic;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 
 @media screen and (max-width: 768px) {
-  .B_main-section {
-      height: 300px;
-  }
+.B_main-section {
+    height: 300px;
+}
 
-  .B_h1 {
-      font-size: 30px;
-  }
+.B_h1 {
+    font-size: 30px;
+}
 
-  .B_p {
-      font-size: 12px; 
-  }
+.B_p {
+    font-size: 12px; 
+}
 }
 
 @media screen and (max-width: 480px) {
-  .B_h1 {
-      font-size: 24px; 
-  }
+.B_h1 {
+    font-size: 24px; 
+}
 
-  .B_p {
-      font-size: 14px; 
-  }
+.B_p {
+    font-size: 14px; 
+}
 }
 
 
@@ -740,37 +740,37 @@ header{
 
 /*Europe*/
 .eu-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 200px;
+margin: 0;
+padding: 20px;
+margin-top: 200px;
 }
 
 .eu_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 
 .eu-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .eu-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .eu-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -783,36 +783,36 @@ header{
 
 
 .am-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .am_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 .am-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .am-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .am-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -825,38 +825,38 @@ header{
 
 
 .az-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .az_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 
 
 .az-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .az-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .az-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -868,38 +868,38 @@ header{
 
 
 .af-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .af_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 
 
 .af-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .af-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .af-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -915,67 +915,67 @@ header{
 
 
 .P_main-section {
-  width: 100%;
-  height: 450px; /* Adjust height as needed */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Politike_bg.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 0 20px; /* Adjust padding */
-  position: relative;
+width: 100%;
+height: 450px; /* Adjust height as needed */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Politike_bg.jpg'); /* Replace with your image path */
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+text-align: left;
+padding: 0 20px; /* Adjust padding */
+position: relative;
 }
 
 .P_content{
-  margin-top: 80px;
-  height: 100px;
-  cursor: pointer;
+margin-top: 80px;
+height: 100px;
+cursor: pointer;
 }
 
 .P_h1:hover{
-  text-decoration: underline white;
+text-decoration: underline white;
 }
 
 .P_h1 {
-  font-size: 54px;
-  margin-bottom: 20px;
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
+font-size: 54px;
+margin-bottom: 20px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
 }
 
 .P_p {
-  font-size: 20px;
-  font-style: italic;
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+font-style: italic;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 @media screen and (max-width: 768px) {
-  .P_main-section {
-      height: 300px; 
-  }
+.P_main-section {
+    height: 300px; 
+}
 
-  .P_h1 {
-      font-size: 30px; 
-  }
+.P_h1 {
+    font-size: 30px; 
+}
 
-  .P_p {
-      font-size: 12px; 
-  }
+.P_p {
+    font-size: 12px; 
+}
 }
 
 @media screen and (max-width: 480px) {
-  .P_h1 {
-      font-size: 24px; 
-  }
+.P_h1 {
+    font-size: 24px; 
+}
 
-  .P_p {
-      font-size: 14px; 
-  }
+.P_p {
+    font-size: 14px; 
+}
 }
 
 
@@ -986,38 +986,38 @@ header{
 
 
 .ks-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .ks_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 
 
 .ks-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .ks-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .ks-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -1030,38 +1030,38 @@ header{
 
 
 .bp-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .bp_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 
 
 .bp-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .bp-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .bp-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
 }
 
 
@@ -1072,34 +1072,509 @@ header{
 
 
 .al-slider{
-  margin: 0;
-  padding: 20px;
-  margin-top: 100px;
+margin: 0;
+padding: 20px;
+margin-top: 100px;
 }
 
 .al_H1{
-  margin-left: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #50577A;
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
 }
 
 
 .al-text{
-  margin-top: -15px;
-  text-align: left;
-  padding: 3px;
-  background-color: #f5f5f504;
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
 }
 
 .al-text h2{
-  margin-top: 10px;
-  font-size: 20px;
-  height: 100%;
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
 }
 
 .al-text h3{
-  font-size: 10px;
-  text-decoration: underline;
+font-size: 10px;
+text-decoration: underline;
+}
+
+
+
+
+
+/*=======================================================================================*/
+
+/*Showbiz*/
+
+
+
+.Sh_main-section {
+width: 100%;
+height: 450px; /* Adjust height as needed */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Showbiz_bg.jpg'); /* Replace with your image path */
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+text-align: left;
+padding: 0 20px; /* Adjust padding */
+position: relative;
+}
+
+.Sh_content{
+margin-top: 80px;
+height: 100px;
+cursor: pointer;
+}
+
+.Sh_h1:hover{
+text-decoration: underline white;
+}
+
+.Sh_h1 {
+font-size: 54px;
+margin-bottom: 20px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
+}
+
+.Sh_p {
+font-size: 20px;
+font-style: italic;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+.Sh_main-section {
+    height: 300px; 
+}
+
+.Sh_h1 {
+    font-size: 30px; 
+}
+
+.Sh_p {
+    font-size: 12px; 
+}
+}
+
+@media screen and (max-width: 480px) {
+.Sh_h1 {
+    font-size: 24px; 
+}
+
+.Sh_p {
+    font-size: 14px; 
+}
+}
+
+
+/*=================*/
+
+/*Showbiz Kosove*/
+
+
+.Shks-slider{
+margin: 0;
+padding: 20px;
+margin-top: 100px;
+}
+
+.Shks_H1{
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
+}
+
+
+
+
+.Shks-text{
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+}
+
+.Shks-text h2{
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.Shks-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+
+
+/*=================*/
+
+/*Showbiz Bota*/
+
+
+.bSh-slider{
+margin: 0;
+padding: 20px;
+margin-top: 100px;
+}
+
+.bSh_H1{
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
+}
+
+
+
+
+.bSh-text{
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+}
+
+.bSh-text h2{
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.bSh-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=======================================================================================*/
+
+/*Sport*/
+
+
+
+.S_main-section {
+width: 100%;
+height: 450px; /* Adjust height as needed */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/SportBg11.png'); /* Replace with your image path */
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+text-align: left;
+padding: 0 20px; /* Adjust padding */
+position: relative;
+}
+
+.S_content{
+margin-top: 80px;
+height: 100px;
+cursor: pointer;
+}
+
+.S_h1:hover{
+text-decoration: underline white;
+}
+
+.S_h1 {
+font-size: 54px;
+margin-bottom: 20px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
+}
+
+.S_p {
+font-size: 20px;
+font-style: italic;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+.S_main-section {
+    height: 300px; 
+}
+
+.S_h1 {
+    font-size: 30px; 
+}
+
+.S_p {
+    font-size: 12px; 
+}
+}
+
+@media screen and (max-width: 480px) {
+.S_h1 {
+    font-size: 24px; 
+}
+
+.S_p {
+    font-size: 14px; 
+}
+}
+
+
+/*=================*/
+
+/*Futboll*/
+
+
+.f-slider{
+margin: 0;
+padding: 20px;
+margin-top: 100px;
+}
+
+.f_H1{
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
+}
+
+
+
+
+.f-text{
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+}
+
+.f-text h2{
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.f-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+
+
+/*=================*/
+
+/*Basket*/
+
+
+.basket-slider{
+margin: 0;
+padding: 20px;
+margin-top: 100px;
+}
+
+.basket_H1{
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
+}
+
+
+
+
+.basket-text{
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+}
+
+.basket-text h2{
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.basket-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+
+
+/*=================*/
+
+/*Esport*/
+
+
+.es-slider{
+margin: 0;
+padding: 20px;
+margin-top: 100px;
+}
+
+.es_H1{
+margin-left: 10%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #50577A;
+}
+
+.es-text{
+margin-top: -15px;
+text-align: left;
+padding: 3px;
+background-color: #f5f5f504;
+}
+
+.es-text h2{
+margin-top: 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.es-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+/*===========================================================================================*/
+/*BLOG*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================================================================*/
+/*Footer*/
+
+
+.footer {
+margin-top: 200px;
+background-color: #50577A;
+color: #fff;
+padding: 20px 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fcontainer {
+width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-section {
+flex: 1;
+margin-right: 20px;
+}
+
+.footer-section:last-child {
+margin-right: 0;
+}
+
+.fH3 {
+margin-bottom: 10px;
+}
+
+.links-list {
+list-style: none;
+color: white;
+}
+
+.f-li{
+list-style: none;
+color: white;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.f-li:hover{
+text-decoration: underline;
+}
+
+.address{
+margin-bottom: 10px;
+}
+
+.email{
+margin-bottom: 10px;
+}
+
+.phone{
+margin-bottom: 10px;
+}
+
+.social-icon {
+color: #fff;
+text-decoration: none;
+}
+
+.footer .social-links .footer-img {
+width: 30px; 
+height: auto;
+margin-right: 10px;
+}
+
+.newsletter-text{
+margin-bottom: 10px;
+}
+
+.subscribe-btn{
+border-color: white;
+color: #50577A;
+border: 1px solid transparent;
+border-radius: 10px;
+padding: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+.fcontainer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-section:last-child {
+  margin-bottom: 0;
+}
 }
