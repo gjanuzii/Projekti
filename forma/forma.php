@@ -12,7 +12,7 @@
   <div class="register-forma">
     <div class="user-container">
         <h2>Krijo Llogari</h2>
-        <form id="userForm">
+        <form id="userForm" action="register.php" method="post">
           <label for="name">Emri:</label>
           <input type="text" id="name" name="name">
           <span id="nameError" class="error"></span>
@@ -33,8 +33,13 @@
           <label for="cpassword">Konfirmo Password:</label>
           <input type="password" id="cpassword" name="cpassword">
           <span id="cpasswordError" class="error"></span>
+
+          <select name="user_type" style="height:35px" >
+         <option value="user">user</option>
+         <option value="admin">admin</option>
+        </select>
     
-          <input type="submit" class="button" value="Register">
+          <input type="submit" name="submit" class="button" value="Register" style="margin-top: 10px">
         </form>
       </div>
   </div>    
@@ -42,14 +47,10 @@
 
 
   <!--LogInForma-->
-  <div class="login-forma">
+  <div class="login-forma" media="(max-width:780px)" style="margin-top: 280px;" >
     <div class="userlog-container">
         <h2>Log In</h2>
-        <form id="userlogForm">
-
-          <label for="l_name">Emri:</label>
-          <input type="text" id="l_name" name="l_name">
-          <span id="l_nameError" class="error"></span>
+        <form id="userlogForm" action="login.php" method="post">
 
           <label for="l_email">Email:</label>
           <input type="text" id="l_email" name="l_email">
@@ -67,6 +68,7 @@
   
   </div>
     
-      <script src="forma.js"></script>
+ 
+
 </body>
 </html>

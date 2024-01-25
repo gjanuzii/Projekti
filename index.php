@@ -486,7 +486,7 @@
                       <div class="footer-section newsletter">
                         <h3 class="fH3">Kyqu Ne Llogari</h3>
                         <p class="newsletter-text">Hape ose kyqu ne llogarine e portalit.</p>
-                        <a href="forma/forma.html">
+                        <a href="forma/forma.php">
                         <button class="subscribe-btn">Llogohu</button>
                         </a>
                       </div>

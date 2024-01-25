@@ -1,0 +1,51 @@
+*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #50577A;
+}
+
+.d-container{
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    width: 100%;
+    margin-left: 2%;
+}
+
+p{
+    color: white;
+    width: 100%;
+}
+
+
+
+.btn{
+  width: 100px;
+  margin-left: 3%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #50577A;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width:780px){
+    .d-container{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+       
+    }
+    .btn{
+        margin-top: 20px;
+    }
+}
