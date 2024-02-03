@@ -2,6 +2,13 @@
 session_start();
 
 
+$userMessage = '';
+if (isset($_SESSION['id'], $_SESSION['name'])) {
+    // Display a welcome message
+    $userMessage = 'Je i lloguar si, ' . $_SESSION['name'] . '!';
+}
+
+
 echo "<div class='d-container'>";
 // Check if the user type is set in the session
 if (isset($_SESSION['user_type'])) {

@@ -24,6 +24,32 @@ if ($result->num_rows > 0) {
     }
 
     echo "</table>";
+
+    // Form for adding news articles
+    echo "<h2>Add News Article</h2>";
+    echo "<form method='post' action='add_news.php'>";
+    echo "<label for='image_url'>Image URL:</label>";
+    echo "<input type='text' id='image_url' name='image_url' required>";
+
+    echo "<label for='title'>Title:</label>";
+    echo "<input type='text' id='title' name='title' required>";
+
+    echo "<label for='category'>Category:</label>";
+    echo "<input type='text' id='category' name='category' required>";
+
+    echo "<label for='subcategory'>Subcategory:</label>"; 
+    echo "<input type='text' id='subcategory' name='subcategory' required>";
+
+    echo "<label for='text'>Text:</label>";
+    echo "<textarea id='text' name='text' required></textarea>";
+
+    echo "<label for='author'>Author:</label>";
+    echo "<input type='text' id='author' name='author' required>";
+
+    echo "<input type='submit' name='submit' value='Add News'>";
+    echo "</form>";
+
+
     echo "<a href='dashboard.php' class='adbtn'>Kthehu</a>";
 } else {
     echo "No users found";

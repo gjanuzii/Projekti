@@ -17,27 +17,27 @@ class User {
     }
 
     public function login($email, $password) {
-        $sql = "SELECT * FROM user_forma WHERE email = '$email'";
+        $sql = "SELECT id, name, user_type, password FROM user_forma WHERE email = '$email'";
         $result = $this->db->conn->query($sql);
 
         if ($result->num_rows == 1) {
             $user = $result->fetch_assoc();
             if (password_verify($password, $user['password'])) {
-                // Password is correct, return user type
-                return $user['user_type'];
+                // Password is correct, return user details
+                return [
+                    'success' => true,
+                    'user_type' => $user['user_type'],
+                    'id' => $user['id'],
+                    'name' => $user['name'],
+                ];
             } else {
                 // Password is incorrect
-                return false;
+                return ['success' => false, 'message' => 'Invalid password'];
             }
         } else {
             // User not found
-            return false;
+            return ['success' => false, 'message' => 'User not found'];
         }
-    }
-
-    // Since the role is specified in the registration form, you might not need this method
-    public function getRoleByEmail($email) {
-        return false;
     }
 }
 ?>

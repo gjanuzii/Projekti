@@ -9,14 +9,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['l_email']);
     $password = $_POST['l_password'];
 
-    $user_type = $user->login($email, $password);
+    $loginResult = $user->login($email, $password);
 
-    // Set the user type in a session variable
     session_start();
-    $_SESSION['user_type'] = (string) $user_type;
 
-    // Redirect to the common dashboard page
-    header('Location: dashboard.php');
-    exit();
+    if ($loginResult['success']) {
+        $_SESSION['user_type'] = $loginResult['user_type'];
+        $_SESSION['id'] = $loginResult['id'];
+        $_SESSION['name'] = $loginResult['name'];
+
+        header('Location: dashboard.php');
+        exit();
+    } else {
+        // Handle unsuccessful login
+        $errorMessage = $loginResult['message'];
+    }
 }
 ?>

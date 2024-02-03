@@ -370,100 +370,6 @@ text-decoration: underline;
 
 
 
-/*bot*/
-
-.ktg-slider{
-margin: 0;
-margin-top: 100px;
-padding-top: 35px;
-padding-bottom: 30px;
-background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-url("images/Bota_bg.jpg") center/cover no-repeat;
-height: 370px;
-max-height: 370px;
-}
-
-
-.btnHref{
-color: white;
-text-decoration: none;
-}
-
-.ktg_htext{
-display: flex;
-flex-direction: row;
-}
-
-.ktg_sliderH1{
-margin-left: 45%;
-color: white;
-cursor: pointer;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 30px;
-}
-
-.ktg_sliderBtn{
-margin-top: 1%;
-margin-left: 37%;
-color: white;
-cursor: pointer;
-border: 3px solid white;
-border-radius: 50px;
-padding: 3px;
-background-color: transparent;
-height: 45px;
-font-weight: bold;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.ktg_sliderBtn:hover{
-background-color: rgba(0, 0, 0, 0.420);
-}
-
-
-.ktg_slider_container .container{
-padding: 0 15px;
-max-width: 1230px;
-margin: 0 auto;
-margin-top: -4%;
-}
-
-.card_slider{
-padding: 50px 0;
-}
-
-.swiper-slide{
-flex: 0 0 auto;
-width: 300px;
-cursor: pointer;
-margin-top: 4%;
-}
-
-.slider-image{
-width: 100%;
-height: auto;
-border: 2px solid white;
-border-radius: 20px;
-}
-
-.tSlider-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-color: white;
-}
-
-.tSlider-text h2{
-font-size: 20px;
-height: 100%;
-}
-
-.tSlider-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
 
 
 /*politik */
@@ -498,7 +404,7 @@ font-size: 30px;
 
 .politike_sliderBtn{
 margin-top: 1%;
-margin-left: 35%;
+margin-left: 550px;
 color: white;
 cursor: pointer;
 border: 3px solid white;
@@ -547,7 +453,7 @@ font-size: 30px;
 
 .sport_sliderBtn{
 margin-top: 1%;
-margin-left: 35%;
+margin-left: 550px;
 color: white;
 cursor: pointer;
 border: 3px solid white;
@@ -566,72 +472,33 @@ background-color: rgba(0, 0, 0, 0.420);
 
 
 
-/*showbiz*/
 
-
-.shB-slider{
-margin: 0;
-margin-top: 200px;
-padding-top: 35px;
-padding-bottom: 30px;
-background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-url("images/Showbiz_bg.jpg") center/cover no-repeat;
-height: 370px;
-max-height: 370px;
-}
-
-
-.shB_htext{
-display: flex;
-flex-direction: row;
-}
-
-.shB_sliderH1{
-margin-left: 45%;
-color: white;
-cursor: pointer;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 30px;
-}
-
-
-.shB_sliderBtn{
-margin-top: 1%;
-margin-left: 35%;
-color: white;
-cursor: pointer;
-border: 3px solid white;
-border-radius: 50px;
-padding: 3px;
-background-color: transparent;
-height: 45px;
-font-weight: bold;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.shB_sliderBtn:hover{
-background-color: rgba(0, 0, 0, 0.420);
-}
+  
 
 @media screen and (max-width: 480px){
-.shB-slider,
+.showB-slider,
 .sport-slider,
 .politike-slider,
-.ktg-slider{
+.bote-slider{
   height: 480px;
 }
 
-.shB_sliderH1,
+.showbiz_sliderH1,
 .sport_sliderH1,
 .politike_sliderH1,
-.ktg_sliderH1{
+.bote_sliderH1{
   margin-left: 20%;
 }
+.tSlider-text h3{
+font-size: 10px;
+text-decoration: underline;
+}
+
+
 }
 
 @media screen and (max-width: 1060px) {
-.shB_sliderBtn {
+.showbiz_sliderBtn {
   display: none;
 }
 .sport_sliderBtn {
@@ -640,7 +507,7 @@ background-color: rgba(0, 0, 0, 0.420);
 .politike_sliderBtn{
   display: none;
 }
-.ktg_sliderBtn{
+.bote_sliderBtn{
   display: none;
 }
 }
@@ -735,172 +602,11 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 /*========*/
 
-/*Bote*/
-
-
-/*Europe*/
-.eu-slider{
-margin: 0;
-padding: 20px;
-margin-top: 200px;
-}
-
-.eu_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-.eu-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.eu-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.eu-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
 
 
 
 
-/*=================*/
 
-/*Amerike*/
-
-
-
-.am-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.am_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-.am-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.am-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.am-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-
-/*=================*/
-
-/*Azi*/
-
-
-
-.az-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.az_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.az-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.az-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.az-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-/*=================*/
-
-/*Afrik*/
-
-
-
-.af-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.af_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.af-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.af-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.af-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
 
 
 
@@ -981,128 +687,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 /*=================*/
 
-/*Kosove*/
-
-
-
-.ks-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.ks_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.ks-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.ks-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.ks-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-
-/*=================*/
-
-/*Bote*/
-
-
-
-.bp-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.bp_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.bp-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.bp-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.bp-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-/*=================*/
-
-/*Shqiperi*/
-
-
-
-.al-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.al_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-.al-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.al-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.al-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
 
 
 
@@ -1181,94 +765,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 /*=================*/
 
-/*Showbiz Kosove*/
-
-
-.Shks-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.Shks_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.Shks-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.Shks-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.Shks-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-/*=================*/
-
-/*Showbiz Bota*/
-
-
-.bSh-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.bSh_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.bSh-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.bSh-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.bSh-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
 
 
 /*=======================================================================================*/
@@ -1343,136 +839,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 /*=================*/
-
-/*Futboll*/
-
-
-.f-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.f_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.f-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.f-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.f-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-/*=================*/
-
-/*Basket*/
-
-
-.basket-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.basket_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-
-
-
-.basket-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.basket-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.basket-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-
-
-/*=================*/
-
-/*Esport*/
-
-
-.es-slider{
-margin: 0;
-padding: 20px;
-margin-top: 100px;
-}
-
-.es_H1{
-margin-left: 10%;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-font-size: 40px;
-color: #50577A;
-}
-
-.es-text{
-margin-top: -15px;
-text-align: left;
-padding: 3px;
-background-color: #f5f5f504;
-}
-
-.es-text h2{
-margin-top: 10px;
-font-size: 20px;
-height: 100%;
-}
-
-.es-text h3{
-font-size: 10px;
-text-decoration: underline;
-}
-
-/*===========================================================================================*/
-/*BLOG*/
-
-
-
-
-
-
-
-
 
 
 

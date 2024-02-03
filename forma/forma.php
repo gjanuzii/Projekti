@@ -39,7 +39,7 @@
          <option value="admin">admin</option>
         </select>
     
-          <input type="submit" name="submit" class="button" value="Register" style="margin-top: 10px">
+          <input type="submit" name="submit" class="button" value="Register" style="margin-top: 10px" >
         </form>
       </div>
   </div>    
